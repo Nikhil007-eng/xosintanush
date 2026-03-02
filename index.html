@@ -118,6 +118,18 @@
         .comment-item { animation: fadeInScale 0.4s ease-out forwards; }
         @keyframes fadeInScale { from { opacity: 0; transform: scale(0.95); } to { opacity: 1; transform: scale(1); } }
     </style>
+    <style>
+  /* This hides the navigation/top bar */
+  header, .navbar, .nav, #bar, .topbar {
+    display: none !important;
+  }
+
+  /* This moves your content up so there isn't a blank gap */
+  body {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+    </style>
 </head>
 <body>
     <div id="followers-modal" class="floating-modal" onclick="handleExit()">
@@ -484,6 +496,7 @@
         async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
+
 
 
 
